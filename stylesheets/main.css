@@ -1,0 +1,176 @@
+:root {
+  --font-stack: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  --font-color: hsl(244, 8%, 35%);
+  --line-height: 1.8rem;
+  --footnote-font-size: 0.7rem;
+  --regular-font-weight: 500;
+  --header-font-weight: 600;
+  --link-color: hsla(244, 128%, 46%, 1);
+
+  font-size: calc(0.8vw + 6px);
+  font-weight: var(--regular-font-weight);
+  font-family: var(--font-stack);
+  color: var(--font-color);
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-decoration-skip-ink: auto;
+  background: hsla(247, 65%, 99%, 1);
+  font-feature-settings: "calt", "liga", "hist", "onum", "pnum";
+  text-rendering: optimizeLegibility;
+  hyphens: none;
+  word-break: break-word;
+  word-wrap: break-word;
+  line-height: var(--line-height);
+}
+
+main {
+  margin: 4rem 12rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 0.15rem;
+  margin: 1.5rem 0 0.6rem 0;
+  /* box-shadow: 0rem 0.5rem 0.5rem 0px #00000017; */
+  user-select: none;
+}
+
+img[diptych="true"] {
+  width: 44%;
+  margin-top: 0;
+  margin-right: 2rem;
+  box-shadow: none;
+}
+
+code,
+pre {
+  font-family: Courier, monospace;
+  color: hsla(244, 8%, 18%, 1);
+  background: hsla(240, 60%, 97%, 1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: var(--header-font-weight);
+  color: hsla(244, 8%, 16%, 1);
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h1:first-of-type {
+  /* margin-bottom: 2.8rem; */
+}
+
+h1:not(:nth-of-type(1)) {
+  margin-top: 4rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-weight: var(--regular-font-weight);
+  text-decoration: underline;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+h2+p,
+h2+ul,
+h2+ol,
+h3+p,
+h3+ul,
+h3+ol {
+  margin-top: 0.2rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+blockquote p {
+  color: gray;
+  font-style: italic;
+}
+
+a {
+  font-style: normal;
+  font-weight: var(--regular-font-weight);
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+sup a {
+  font-size: var(--footnote-font-size);
+  text-decoration: none;
+  color: var(--font-color)
+}
+
+.light-text {
+  /* TODO this should not have a classname */
+  color: lightgrey;
+  font-style: italic;
+}
+
+em {
+  font-style: normal;
+  font-weight: var(--regular-font-weight);
+  font-style: italic;
+}
+
+p {
+  font-style: normal;
+  font-weight: var(--regular-font-weight);
+  font-size: 1rem;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+article:nth-of-type(1) {
+  margin-top: 0;
+}
+
+article {
+  margin-top: 6rem;
+  max-width: 48ch;
+}
+
+
+@media screen and (max-width: 50em) {
+  :root {
+    font-size: calc(1vw + 10px);
+  }
+
+  main {
+    margin: 4rem 1rem;
+    padding: 0;
+  }
+}
