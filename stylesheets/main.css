@@ -27,32 +27,12 @@ body {
 }
 
 main {
-  margin: 4rem 12rem;
+  margin: 4rem 10rem;
 }
 
-img {
-  max-width: 100%;
-  max-height: 70vh;
-  border-radius: 0.15rem;
-  margin: 1.5rem 0 0.6rem 0;
-  /* box-shadow: 0rem 0.5rem 0.5rem 0px #00000017; */
-  user-select: none;
-}
-
-img[diptych="true"] {
-  width: 44%;
-  margin-top: 0;
-  margin-right: 2rem;
-  box-shadow: none;
-}
-
-code,
-pre {
-  font-family: Courier, monospace;
-  color: hsla(244, 8%, 18%, 1);
-  background: hsla(240, 60%, 97%, 1);
-  padding: 0.1rem 0.3rem;
-  border-radius: 0.2rem;
+hr {
+  margin: 1rem 0;
+  border: 1px solid #eeeee;
 }
 
 h1,
