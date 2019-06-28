@@ -81,24 +81,8 @@ hr {
   margin: 2rem 0;
 }
 
-blockquote p {
-  color: gray;
-  font-style: italic;
-}
-
 a {
-  font-style: normal;
-  font-weight: var(--regular-font-weight);
-  font-size: 1rem;
-  margin: 0 0 2rem 0;
-  color: var(--link-color);
-  text-decoration: underline;
-}
-
-sup a {
-  font-size: var(--footnote-font-size);
   text-decoration: none;
-  color: var(--font-color)
 }
 
 .light-text {
@@ -107,16 +91,11 @@ sup a {
   font-style: italic;
 }
 
-em {
-  font-style: normal;
-  font-weight: var(--regular-font-weight);
-  font-style: italic;
-}
-
 p {
   font-style: normal;
-  font-weight: var(--regular-font-weight);
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom:
 }
 
 
@@ -140,7 +119,8 @@ article:nth-of-type(1) {
 
 article {
   margin-top: 6rem;
-  max-width: 48ch;
+  max-width: 600px;
+  width: 100%;
 }
 
 
