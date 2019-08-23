@@ -5,6 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Tremendous Recruiting</title>
+    <link rel="shortcut icon" href="https://app.tremendous.com/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
@@ -16,35 +17,65 @@
         <h1>Hi, we're <a href="https://www.tremendous.com" target="_blank">Tremendous</a></h1>
 
         <p>
-          We're a profitable YC-backed payments company. We help companies such as Pinterest, Spotify, and Atlassian nudge positive behaviors out of users, co-workers, sales prospects, etc. with monetary incentives.
+          We're a profitable YC-backed payments company. We help companies such as Pinterest, Spotify, and Atlassian nudge positive behaviors out of users, co-workers, prospects, etc. with digital rewards / incentives.
         </p>
 
         <p>
           <em>We're looking for exceptional people to join our engineering and sales teams</em> and, to be on-brand, here's our proposition:
         <p>
 
-        <blockquote style="margin: 30px auto; width: 85%;">
+        <blockquote style="margin: 30px auto; width: 95%;">
            <em>We'll donate $50 to a <span style="text-decoration underline">charity of your choice</span></em> if you end up conducting a second round interview with us (see below).
         </blockquote>
 
         <p>
-          <b>Engineers</b>, if you're excited by the prospect of massive ownership over full-stack features which touch large entreprises and hundreds of thousands of end-users, <a id="engineer-reward" href=""><b>here's your $50 incentive</b></a>.
+          <b>Engineers</b>, want to own full-stack features which touch entreprises and millions of end-users? <a id="engineer-reward" href=""><b>Check out this $50 donation incentive</b></a>.
         </p>
 
         <p>
-          <b>Sales</b>, if you enjoy wearing multiple hats as part product thinker, part BD, and part closer, and hope to own complex 6 to 8 figure enteprise deals with C-level counterparties, <a id="sales-reward" href=""><b>here's your $50 incentive</b></a>.
+          <b>Sales</b>, if you're excited to discover and close complex 6 to 8 figure deals with C-level counterparties, <a id="sales-reward" href=""><b>here's $50 to donate to charity</b></a>.
         </p>
 
         <hr />
 
         <p>
-          <b>App Developers</b>, we've got an reward for you too! If your business disburses more than $50k in a year through our platform, we'll donate $500 to a charity of your choice. <a href=""><b>Here's the incentive to get started</b></a>.
+          <b>App developers</b>, we've got an reward for you too! If your business pays out more than $50k in a year through our platform, <b>we'll donate $500 to a charity of your choice</b>. <a href=""><b>Here's the incentive to get started</b></a>. That link will also make clear how we embedded this Stripe-esque SDK in this page with minimal coding effort.
         </p>
       </article>
 
       <script type="text/javascript" src="https://cdn.tremendous.com/embed/v2.1.0/client.js"></script>
 
       <script type="text/javascript" src="./javascripts/main.js" /></script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120447810-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120447810-1');
+      </script>
+
+      <script type="text/javascript">
+          adroll_adv_id = "VR52KZ55EZGPNK3BMK33UD";
+          adroll_pix_id = "UNHMZYXHHBFUNNR75LVWVL";
+
+          (function () {
+              var _onload = function(){
+                  if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+                  if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+                  var scr = document.createElement("script");
+                  var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+                  scr.setAttribute('async', 'true');
+                  scr.type = "text/javascript";
+                  scr.src = host + "/j/roundtrip.js";
+                  ((document.getElementsByTagName('head') || [null])[0] ||
+                      document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+              };
+              if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+              else {window.attachEvent('onload', _onload)}
+          }());
+      </script>
 
     </body>
 </html>

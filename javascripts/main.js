@@ -1,8 +1,8 @@
 $(function() {
-  var publicToken = "d14b07e8ba00172dc3da99554833254e1ddb03565b13149b9fc3e7ce6a19f254";
+  var publicToken = "eb1c6870dd97aea71ad7765bb53ac90c9253fba802932d545054fef506c08cc1";
 
   var client = Tremendous(publicToken, {
-    domain: Tremendous.domains.SANDBOX
+    domain: Tremendous.domains.PRODUCTION
   });
 
   function redeem(campaignId, denomination) {
@@ -11,7 +11,7 @@ $(function() {
 
       var order = {
         payment: {
-          funding_source_id: "TXVVL0RW62CO",
+          funding_source_id: "BCV4GLLT3ZIN",
         },
         reward: {
           value: {
@@ -47,8 +47,8 @@ $(function() {
     return _redeem;
   }
 
-  $("#engineer-reward").on("click", redeem("A48BKQV3A2NV", 50));
-  $("#sales-reward").on("click", redeem("A48BKQV3A2NV", 500));
+  $("#engineer-reward").on("click", redeem("UZKCHMGFEPUL", 50));
+  $("#sales-reward").on("click", redeem("N0VCOI536FH5", 500));
   $("#app-reward").on("click", redeem("A48BKQV3A2NV", 50));
 
 });
