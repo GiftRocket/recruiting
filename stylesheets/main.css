@@ -36,27 +36,15 @@ hr {
 
 h1 {
   font-style: normal;
-  font-size: 1rem;
   font-weight: var(--header-font-weight);
   color: hsla(244, 8%, 16%, 1);
-}
-
-h1 {
   font-size: 15px;
   margin-bottom: 1.25rem;
 }
 
-h1:first-of-type {
-  /* margin-bottom: 2.8rem; */
-}
 
 h1:not(:nth-of-type(1)) {
   margin-top: 4rem;
-}
-
-h2 {
-  margin-top: 2rem;
-  margin-bottom: 0;
 }
 
 hr {
@@ -105,7 +93,7 @@ article {
 
 @media screen and (max-width: 50em) {
   :root {
-    font-size: calc(1vw + 10px);
+    font-size: 12px;
   }
 
   main {
