@@ -1,4 +1,9 @@
 $(function() {
+  gtag('event', 'generate_lead', {
+    'event_label' : 'recruiting_post',
+    'method': "recruiting"
+  });
+
   var publicToken = "eb1c6870dd97aea71ad7765bb53ac90c9253fba802932d545054fef506c08cc1";
 
   var client = Tremendous(publicToken, {
