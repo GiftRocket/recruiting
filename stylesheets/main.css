@@ -6,7 +6,7 @@
   --header-font-weight: 600;
   --link-color: hsla(244, 128%, 46%, 1);
 
-  font-size: 13px;
+  font-size: 14px;
   font-weight: var(--regular-font-weight);
   font-family: var(--font-stack);
   color: var(--font-color);
