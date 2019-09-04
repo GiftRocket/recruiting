@@ -52,8 +52,8 @@ $(function() {
     return _redeem;
   }
 
-  $("#engineer-reward").on("click", redeem("UZKCHMGFEPUL", 50));
-  $("#sales-reward").on("click", redeem("N0VCOI536FH5", 50));
-  $("#app-reward").on("click", redeem("I396QFVMN2KI", 500));
+  $("#engineer-reward").on("click", redeem("UZKCHMGFEPUL", 500));
+  $("#sales-reward").on("click", redeem("N0VCOI536FH5", 500));
+  $("#app-reward").on("click", redeem("F59IXDCAGFA7", 500));
 
 });
